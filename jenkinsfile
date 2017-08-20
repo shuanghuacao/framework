@@ -1,18 +1,18 @@
 node {
     stage('preparation') {
         // Checkout the master branch of the Laravel framework repository
-        echo "preparation-1"
+        echo "preparation-new"
     }
     stage("composer_install") {
         // Run `composer update` as a shell script
-        echo 'composer install-1'
+        echo 'composer install-new'
     }
     stage("phpunit") {
         // Run PHPUnit
-        echo 'vendor/bin/phpunit-1'
+        echo 'vendor/bin/phpunit-new'
     }
     stage("createfile"){
-        sh 'echo "abc-1" > temptemp.txt-1'
+        sh 'echo "abc-new" > temptemp.txt-1'
     }
     stage("cleanup"){
         deleteDir()
